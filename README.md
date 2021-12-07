@@ -1,1 +1,1 @@
-JSON simple parsin is in main branch
+JSON simple parsing is in main branch
