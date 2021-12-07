@@ -1,0 +1,29 @@
+{
+  "name": "JsonAnimals",
+  "animals" : [
+    {
+      "name": "Dog",
+      "speaking": "bark",
+      "age": 4,
+      "colour": "dark"
+    },
+    {
+      "name": "Cat",
+      "speaking": "meow",
+      "age": 12,
+      "colour": "darkish"
+    },
+    {
+      "name": "Cow",
+      "speaking": "muuu",
+      "age": 6,
+      "colour": "brown"
+    },
+    {
+      "name": "Goat",
+      "speaking": "beee",
+      "age": 2,
+      "colour": "white"
+    }
+  ]
+}
