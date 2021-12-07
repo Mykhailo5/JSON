@@ -1,9 +1,13 @@
 package helpers;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.util.List;
 
 public class Root {
     private String name;
+
+    @SerializedName("animals_list")
     private List<Animals> animals;
 
     public void setName(String name) {

@@ -4,7 +4,7 @@ import helpers.Root;
 
 public class Main {
     public static void main(String[] args) {
-        JSONSimpleParser jsonSimpleParser = new JSONSimpleParser();
+        GSONParser jsonSimpleParser = new GSONParser();
         Root root = jsonSimpleParser.parse();
         System.out.println("Root : " + root);
     }

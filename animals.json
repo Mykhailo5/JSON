@@ -1,6 +1,6 @@
 {
   "name": "JsonAnimals",
-  "animals" : [
+  "animals_list" : [
     {
       "name": "Dog",
       "speaking": "bark",
