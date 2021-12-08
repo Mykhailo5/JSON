@@ -1,14 +1,15 @@
 package helpers;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class ChildProjects {
     public String name;
     public String releaseGroup;
     public List<ReportFiles> reportFiles;
-    public Object childProjects;
+    public List<ChildProjects> childProjects;
 
-    public ChildProjects(String name, String releaseGroup, List<ReportFiles> reportFiles, Object childProjects) {
+    public ChildProjects(String name, String releaseGroup, List<ReportFiles> reportFiles, List<ChildProjects> childProjects) {
         this.name = name;
         this.releaseGroup = releaseGroup;
         this.reportFiles = reportFiles;
@@ -27,7 +28,7 @@ public class ChildProjects {
         return reportFiles;
     }
 
-    public Object getChildProjects() {
+    public List<ChildProjects> getChildProjects() {
         return childProjects;
     }
 
