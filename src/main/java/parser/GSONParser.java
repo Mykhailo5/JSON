@@ -1,7 +1,7 @@
 package parser;
 
 import java.io.FileReader;
-import Constants.Constants;
+import constants.Constants;
 import com.google.gson.Gson;
 import helpers.Root;
 
