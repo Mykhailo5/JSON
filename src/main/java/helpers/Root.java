@@ -3,22 +3,22 @@ package helpers;
 import java.util.List;
 
 public class Root {
-    private String name;
-    private List<Animals> animals;
+    public List<ReleaseGroups> releaseGroups;
+    public List<Projects> projects;
 
-    public void setName(String name) {
-        this.name = name;
+    public void setReleaseGroups(List<ReleaseGroups> releaseGroups) {
+        this.releaseGroups = releaseGroups;
     }
 
-    public void setAnimals(List<Animals> animals) {
-        this.animals = animals;
+    public void setProjects(List<Projects> projects) {
+        this.projects = projects;
     }
 
     @Override
     public String toString() {
         return "Root{" +
-                "name='" + name + '\'' +
-                ", animals=" + animals +
+                "releaseGroups=" + releaseGroups +
+                ", projects=" + projects +
                 '}';
     }
 }
