@@ -6,7 +6,7 @@ public class Projects {
     private String name;
     private String releaseGroup;
     private List<ReportFiles> reportFiles;
-    private List<Projects> childProjects; //Projects instead of ChildProjects
+    private List<Projects> childProjects;
     private List<RootCauses> rootCauses;
     private List<Epics> epics;
 

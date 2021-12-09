@@ -5,14 +5,14 @@ import java.util.List;
 public class Epics {
     private String name;
     private String description;
-    private int sSizes;
+    private int sizes;
     private int startDateOffset;
     private List<String> releases;
 
-    public Epics(String name, String description, int sSizes, int startDateOffset, List<String> releases) {
+    public Epics(String name, String description, int sizes, int startDateOffset, List<String> releases) {
         this.name = name;
         this.description = description;
-        this.sSizes = sSizes;
+        this.sizes = sizes;
         this.startDateOffset = startDateOffset;
         this.releases = releases;
     }
@@ -26,7 +26,7 @@ public class Epics {
     }
 
     public int getsSizes() {
-        return sSizes;
+        return sizes;
     }
 
     public int getStartDateOffset() {
@@ -46,7 +46,7 @@ public class Epics {
     }
 
     public void setsSizes(int sSizes) {
-        this.sSizes = sSizes;
+        this.sizes = sSizes;
     }
 
     public void setStartDateOffset(int startDateOffset) {
@@ -62,7 +62,7 @@ public class Epics {
         return "Epics{" +
                 "name='" + name + '\'' +
                 ", description='" + description + '\'' +
-                ", sSizes=" + sSizes +
+                ", sSizes=" + sizes +
                 ", startDateOffset=" + startDateOffset +
                 ", releases=" + releases +
                 '}';
