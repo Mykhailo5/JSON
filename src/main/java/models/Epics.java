@@ -1,13 +1,13 @@
-package helpers;
+package models;
 
 import java.util.List;
 
 public class Epics {
-    public String name;
-    public String description;
-    public int sSizes;
-    public int startDateOffset;
-    public List<String> releases;
+    private String name;
+    private String description;
+    private int sSizes;
+    private int startDateOffset;
+    private List<String> releases;
 
     public Epics(String name, String description, int sSizes, int startDateOffset, List<String> releases) {
         this.name = name;
@@ -35,6 +35,26 @@ public class Epics {
 
     public List<String> getReleases() {
         return releases;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setsSizes(int sSizes) {
+        this.sSizes = sSizes;
+    }
+
+    public void setStartDateOffset(int startDateOffset) {
+        this.startDateOffset = startDateOffset;
+    }
+
+    public void setReleases(List<String> releases) {
+        this.releases = releases;
     }
 
     @Override

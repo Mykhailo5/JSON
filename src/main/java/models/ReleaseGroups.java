@@ -1,10 +1,10 @@
-package helpers;
+package models;
 
 import java.util.List;
 
 public class ReleaseGroups {
-    public String name;
-    public List<Releases> releases;
+    private String name;
+    private List<Releases> releases;
 
     public ReleaseGroups(String name, List<Releases> releases) {
         this.name = name;
@@ -17,6 +17,14 @@ public class ReleaseGroups {
 
     public List<Releases> getReleases() {
         return releases;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setReleases(List<Releases> releases) {
+        this.releases = releases;
     }
 
     @Override

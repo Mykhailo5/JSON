@@ -1,10 +1,18 @@
-package helpers;
+package models;
 
 import java.util.List;
 
 public class Root {
-    public List<ReleaseGroups> releaseGroups;
-    public List<Projects> projects;
+    private List<ReleaseGroups> releaseGroups;
+    private List<Projects> projects;
+
+    public List<ReleaseGroups> getReleaseGroups() {
+        return releaseGroups;
+    }
+
+    public List<Projects> getProjects() {
+        return projects;
+    }
 
     public void setReleaseGroups(List<ReleaseGroups> releaseGroups) {
         this.releaseGroups = releaseGroups;

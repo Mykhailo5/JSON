@@ -3,20 +3,26 @@ package parser;
 import java.io.FileReader;
 import constants.Constants;
 import com.google.gson.Gson;
-import helpers.Root;
+import models.Root;
 
 public class GSONParser {
 
-    public Root parse() {
-        Gson gson = new Gson();
+   private Gson gson;
+   private Root root;
+
+    public GSONParser() {
+        gson = new Gson();
         try {
             FileReader fileReader = new FileReader(Constants.JSON_FILE_NAME);
 
-            return gson.fromJson(fileReader, Root.class);
+            root = gson.fromJson(fileReader, Root.class);
 
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return null;
+    }
+
+    public Root getRoot(){
+        return root;
     }
 }

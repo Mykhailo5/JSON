@@ -1,12 +1,12 @@
-package helpers;
+package models;
 
 import java.util.List;
 
 public class Releases {
-    public String name;
-    public String length;
-    public String startDateOffset;
-    public List<Sprints> sprints;
+    private String name;
+    private String length;
+    private String startDateOffset;
+    private List<Sprints> sprints;
 
     public Releases(String name, String length, String startDateOffset, List<Sprints> sprints) {
         this.name = name;
@@ -29,6 +29,22 @@ public class Releases {
 
     public List<Sprints> getSprints() {
         return sprints;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setLength(String length) {
+        this.length = length;
+    }
+
+    public void setStartDateOffset(String startDateOffset) {
+        this.startDateOffset = startDateOffset;
+    }
+
+    public void setSprints(List<Sprints> sprints) {
+        this.sprints = sprints;
     }
 
     @Override

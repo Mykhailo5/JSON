@@ -1,8 +1,8 @@
-package helpers;
+package models;
 
 public class ReportFiles {
-    public String fileLocation;
-    public int startDateOffset;
+    private String fileLocation;
+    private int startDateOffset;
 
     public ReportFiles(String fileLocation, int startDateOffset) {
         this.fileLocation = fileLocation;
@@ -15,6 +15,14 @@ public class ReportFiles {
 
     public int getStartDateOffset() {
         return startDateOffset;
+    }
+
+    public void setFileLocation(String fileLocation) {
+        this.fileLocation = fileLocation;
+    }
+
+    public void setStartDateOffset(int startDateOffset) {
+        this.startDateOffset = startDateOffset;
     }
 
     @Override

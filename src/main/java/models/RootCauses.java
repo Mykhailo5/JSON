@@ -1,8 +1,8 @@
-package helpers;
+package models;
 
 public class RootCauses {
-    public String name;
-    public String description;
+    private String name;
+    private String description;
 
     public RootCauses(String name, String description) {
         this.name = name;
@@ -15,6 +15,14 @@ public class RootCauses {
 
     public String getDescription() {
         return description;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     @Override
